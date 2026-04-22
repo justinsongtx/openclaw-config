@@ -1,11 +1,9 @@
 # 无权访问的目录
 tasks/
 
-# 无权访问的目录（其他用户所有）
-agents/main/
-
-# 独立的 git 仓库（不作为子模块跟踪）
+# 运行时数据目录（嵌套 git 仓库，由 openclaw 管理）
 workspace/
+
 
 # 备份文件
 *.bak

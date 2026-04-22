@@ -34,12 +34,10 @@
           "alias": "MiniMax M2.5 [MS]"
         },
         "qwen/glm-5": {
-          "alias": "GLM-5 (200k)",
-          "params": { "thinking": "off" }
+          "alias": "GLM-5 (200k)"
         },
         "modelstudio/glm-5": {
-          "alias": "GLM-5 [MS]",
-          "params": { "thinking": "off" }
+          "alias": "GLM-5 [MS]"
         },
         "qwen/glm-4.7": {
           "alias": "GLM-4.7 (200k)"
@@ -61,16 +59,18 @@
     "list": [
       {
         "id": "interviewer",
-        "name": "面试官"
+        "name": "面试官",
+        "model": "qwen/glm-5"
       },
       {
         "id": "jarvis",
         "name": "Jarvis",
-        "model": "qwen/glm-4.7",
+        "model": "qwen/qwen3.5-plus",
         "thinkingDefault": "off",
-        "fastModeDefault": true,
-        "skills": ["taskflow"],
-        "systemPromptOverride": "你是 Jarvis，用户的快速对话助手。\n\n## 核心规则（强制）\n\n任何需要调用工具的请求：\n1. 先回复一句话告知用户（如「好的，查完告诉你」）\n2. 立即调用 sessions_spawn 把任务交给子 session\n3. 直接结束 turn，禁止调用 sessions_yield\n4. 禁止在当前 session 直接调用任何工具\n\n子 session task 要求：直接给结论，完成后返回 3-5 句摘要。\n\n## 风格\n- 简短直接，无开场白\n- 不确定直接说不确定\n- 任务进行中主动更新状态\n\n## 禁止\n- 父 session 直接调工具\n- spawn 后调用 sessions_yield\n- 超过 10 秒无反馈"
+        "contextLimits": {
+          "maxTokens": 1500
+        },
+        "systemPromptOverride": "你是 Jarvis，用户的快速对话助手。\n\n## 核心规则（强制）\n\n任何需要调用工具的请求：\n1. 先回复一句话告知用户（如"好的，查完告诉你"）\n2. 立即调用 sessions_spawn 把任务交给子 session\n3. 直接结束 turn，禁止调用 sessions_yield\n4. 禁止在当前 session 直接调用任何工具\n\n子 session task 要求：直接给结论，完成后返回 3-5 句摘要。\n\n## 风格\n- 简短直接，无开场白\n- 不确定直接说不确定\n- 任务进行中主动更新状态\n\n## 禁止\n- 父 session 直接调工具\n- spawn 后调用 sessions_yield\n- 超过 10 秒无反馈"
       }
     ]
   },
@@ -116,7 +116,7 @@
     "mode": "merge",
     "providers": {
       "qwen": {
-        "baseUrl": "http://192.168.0.1:8788/v1",
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
         "api": "openai-completions",
         "models": [
           {

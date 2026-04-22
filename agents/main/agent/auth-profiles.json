@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "profiles": {
+    "qwen:default": {
+      "type": "api_key",
+      "provider": "qwen",
+      "key": "sk-sp-41a650b7d18a42b4b3b485399dbd5194"
+    }
+  }
+}
