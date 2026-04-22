@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "nodeId": "71c01e64-6152-4621-9df4-d31f6baf81c9",
+  "displayName": "claudeX20-local",
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 18789,
+    "tls": false
+  }
+}

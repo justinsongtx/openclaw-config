@@ -1,0 +1,18 @@
+# 无权访问的目录
+tasks/
+
+# 无权访问的目录（其他用户所有）
+agents/main/
+
+# 独立的 git 仓库（不作为子模块跟踪）
+workspace/
+
+# 备份文件
+*.bak
+*.bak.*
+
+# 日志（可选，按需取消注释）
+# logs/
+
+# 更新检查
+update-check.json

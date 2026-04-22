@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "deviceId": "8fb1a59a0d90ed72cd7751d6debb4a0701f38ca80979793a3f29f24b32e963dc",
+  "tokens": {
+    "node": {
+      "token": "ba8AAaANY878lCnj5OvRIsn2awtDUtVXV_HNN7IbF2c",
+      "role": "node",
+      "scopes": [],
+      "updatedAtMs": 1776332278133
+    },
+    "operator": {
+      "token": "Dvt4xSBTTuzHU3HtT4FZ0YGCUcR3lwIL2q802PF2iJk",
+      "role": "operator",
+      "scopes": [
+        "operator.read"
+      ],
+      "updatedAtMs": 1776824651276
+    }
+  }
+}
