@@ -4,28 +4,65 @@
       "workspace": "/home/node/.openclaw/workspace",
       "models": {
         "qwen/qwen3.5-plus": {
-          "alias": "Qwen"
+          "alias": "Qwen3.5 Plus (多模态·1M)"
         },
-        "modelstudio/qwen3.5-plus": {},
-        "qwen/qwen3-max-2026-01-23": {},
-        "modelstudio/qwen3-max-2026-01-23": {},
-        "qwen/qwen3-coder-next": {},
-        "modelstudio/qwen3-coder-next": {},
-        "qwen/qwen3-coder-plus": {},
-        "modelstudio/qwen3-coder-plus": {},
-        "qwen/MiniMax-M2.5": {},
-        "modelstudio/MiniMax-M2.5": {},
-        "qwen/glm-5": {},
-        "modelstudio/glm-5": {},
-        "qwen/glm-4.7": {},
-        "modelstudio/glm-4.7": {},
-        "qwen/kimi-k2.5": {},
-        "modelstudio/kimi-k2.5": {}
+        "modelstudio/qwen3.5-plus": {
+          "alias": "Qwen3.5 Plus [MS]"
+        },
+        "qwen/qwen3-max-2026-01-23": {
+          "alias": "Qwen3 Max (256k)"
+        },
+        "modelstudio/qwen3-max-2026-01-23": {
+          "alias": "Qwen3 Max [MS]"
+        },
+        "qwen/qwen3-coder-next": {
+          "alias": "Qwen3 Coder Next (256k)"
+        },
+        "modelstudio/qwen3-coder-next": {
+          "alias": "Qwen3 Coder Next [MS]"
+        },
+        "qwen/qwen3-coder-plus": {
+          "alias": "Qwen3 Coder Plus (1M)"
+        },
+        "modelstudio/qwen3-coder-plus": {
+          "alias": "Qwen3 Coder Plus [MS]"
+        },
+        "qwen/MiniMax-M2.5": {
+          "alias": "MiniMax M2.5 (推理·1M)"
+        },
+        "modelstudio/MiniMax-M2.5": {
+          "alias": "MiniMax M2.5 [MS]"
+        },
+        "qwen/glm-5": {
+          "alias": "GLM-5 (200k)"
+        },
+        "modelstudio/glm-5": {
+          "alias": "GLM-5 [MS]"
+        },
+        "qwen/glm-4.7": {
+          "alias": "GLM-4.7 (200k)"
+        },
+        "modelstudio/glm-4.7": {
+          "alias": "GLM-4.7 [MS]"
+        },
+        "qwen/kimi-k2.5": {
+          "alias": "Kimi K2.5 (多模态·256k)"
+        },
+        "modelstudio/kimi-k2.5": {
+          "alias": "Kimi K2.5 [MS]"
+        }
       },
       "model": {
         "primary": "qwen/glm-5"
       }
-    }
+    },
+    "list": [
+      {
+        "id": "interviewer",
+        "name": "面试官",
+        "model": "qwen/glm-5"
+      }
+    ]
   },
   "gateway": {
     "mode": "local",
@@ -222,7 +259,7 @@
   },
   "meta": {
     "lastTouchedVersion": "2026.4.19-beta.2",
-    "lastTouchedAt": "2026-04-22T02:29:49.591Z"
+    "lastTouchedAt": "2026-04-22T03:16:06.619Z"
   },
   "plugins": {
     "entries": {
